@@ -1,15 +1,8 @@
-{
-  "name": "The electronic Engineer Test",
-  "builds": [
-    {
-      "chipFamily": "ESP32",
-      "improv": false,
-      "parts": [
-        { "path": "bootloader_qio_80m.bin", "offset": 4096 },
-        { "path": "BlinkREgular.ino.partitions.bin", "offset": 32768 },
-        { "path": "boot_app0.bin", "offset": 57344 },
-        { "path": "BlinkREgular.bin", "offset": 65536 }
-      ]
-    }
-  ]
-}
+<!DOCTYPE html>
+<html>
+<body>
+    <h1>ESP-Web-Tool-Test</h1>
+    <script type="module" src="https://unpkg.com/esp-web-tools@3.4.2/dist/web/install-button.js?module"></script>
+    <esp-web-install-button manifest="test/manifest.json"></esp-web-install-button>
+</body>
+</html>
