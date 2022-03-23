@@ -1,5 +1,20 @@
 <!DOCTYPE html>
 <html>
+    <head>
+           <meta charset="UTF-8">
+        <link href="https://fonts.googleapis.com/css2?family=poppins:wght@300;400;500;600&display=swap"
+              rel="stylesheet">
+        <style>
+            *{
+                padding: 0;
+                margin: 0;
+                box-sizing"border-box;
+                outline: none;
+            }
+            body{
+                font-family: 'poppins', sans-serif;
+        </style>
+    </head>
 <body>
     <h1>The Electronic Engineer</h1>
     <p></p>
@@ -11,6 +26,7 @@
     <p><b> This will only work with Chrome or Edge browser -->jippie</b></p>
     <script type="module" src="https://unpkg.com/esp-web-tools@3.4.2/dist/web/install-button.js?module"></script>
     <esp-web-install-button manifest="test/manifest.json"></esp-web-install-button>
+    
     <div class="wrapper">
         <div class="menu">
             <select id="name">>
@@ -25,10 +41,17 @@
            <div id="nia" class="data">
               <p><b>Naam</b><span>mark donners</span></p>
             </div>
-        <div id="henk" class="data"></div>
-        <div id="nsf" class="data"></div>
-        <div id="nsd" class="data"></div>
+        <div id="henk" class="data">
+         <p><b>Naam</b><span>Henkie tenkie</span></p>   
+        </div>
+        <div id="nsf" class="data">
+            <p><b>Naam</b><span>nsf denkt mee</span></p>
+        </div>
+        <div id="nsd" class="data">
+            <p><b>Naam</b><span>nsd doet mee</span></p>
+        </div>
      </div>
+    
     <script src="https://cdnjs.cloudflare.com/ajax/libs.jquery/3.5.1/jquery.min.js"></script>
     <script>
         $(document).ready(function()){
