@@ -1,137 +1,132 @@
 <!DOCTYPE html>
 <html>
-    <head>
-           <meta charset="UTF-8">
-        <link href="https://fonts.googleapis.com/css2?family=poppins:wght@300;400;500;600&display=swap"
-              rel="stylesheet">
-        <style>
-            *{
-                padding: 0;
-                margin: 0;
-                box-sizing"border-box;
-                outline: none;
-            }
-            body{
-                font-family: 'poppins', sans-serif;
-            }
-            .wrapper{
-                display: flex;
-                justify-content: left;
-                flex-wrap: wrap;
-                padding: 70px 0;
-                max-width: 400px;
-                margin: 0 auto;                   
-            }
-            .menu,
-            .content{
-                width: 100%;
-            }
-            select{
-                width: 100%;
-                padding: 15px;
-                font=size: 16px;
-                font-weight: 700;
-                font-family: 'poppins', sans-serif;
-                border: none;
-                border-radius: 8px;
-                border: 2px solid #3f51b5;
-                box-shadow: 0 15px 15px #efefef;
-                appearance: none;
-                background: #e8eaf6 url(image/arrow.png) no-repeat;
-                background-position: 95% 55%;
-                background-size: 22px;
-            }
-            .content{
-                margin: 30px 0;
-            }
-            .content .data{
-                padding: 25px;
-                background-color: #fff;
-                border: 2px solid #8bc34a;
-                border-radius: 8px;
-            }
-            çontent p{
-                margin-bottom: 15px;
-                padding-bottom: 15px;
-                border-bottom: 1px solid gainsboro;
-            }
-            .content p: last-child{
-                border-bottom: none;
-                margin-bottom: 0;
-                padding-bottom: 0;
-            }
-            .content p b{
-                font-weight: 700;
-            }
-            .content p span{
-                float: right;
-                font-weight: normal;
-            }
-            .data{
-                display: none;
-            }
-                
-            
-        </style>
-    </head>
-<body>
-    <h1>The Electronic Engineer</h1>
-    <p></p>
-    <br>
-     <p><b>Direct ESP32 programming</b></p>
-    <p>This will install the firmware directly to your ESP32 without the need of Arduino or Compilers.</p>
-    <p> Just Select the project you want to install below and click install! <p>
-        
-    <p><br></p>
-    <p><b> Only supported with Google Chrome or Microsoft Edge. It does not work with Firefox.</b></p>
-    
-
-    
-    <div class="wrapper">
-        <div class="menu">
-            <select id="name">>
-                <option value="Option1">Bluetooth Analyzer Vx.xx</option> 
-                <option value="Option2">Network Monitor Vx.xx</option> 
-                <option value="Option3">Lego Analyzer Vx.xx</option> 
-                <option value="Option4">WebSpector Vx.xx</option> 
-                <option value="Option5">Bluetooth Speaker Vx.xx</option> 
-                <option value="Option6">You've got Mail Vx.xx</option> 
-                <option value="Option7">Talking Clock Vx.xx</option> 
+   <head>
+      <meta charset="UTF-8">
+      <link href="https://fonts.googleapis.com/css2?family=poppins:wght@300;400;500;600&display=swap"
+         rel="stylesheet">
+      <style>
+         *{
+         padding: 0;
+         margin: 0;
+         box-sizing"border-box;
+         outline: none;
+         }
+         body{
+         font-family: 'poppins', sans-serif;
+         }
+         .wrapper{
+         display: flex;
+         justify-content: left;
+         flex-wrap: wrap;
+         padding: 70px 0;
+         max-width: 400px;
+         margin: 0 auto;                   
+         }
+         .menu,
+         .content{
+         width: 100%;
+         }
+         select{
+         width: 100%;
+         padding: 15px;
+         font=size: 16px;
+         font-weight: 700;
+         font-family: 'poppins', sans-serif;
+         border: none;
+         border-radius: 8px;
+         border: 2px solid #3f51b5;
+         box-shadow: 0 15px 15px #efefef;
+         appearance: none;
+         background: #e8eaf6 url(image/arrow.png) no-repeat;
+         background-position: 95% 55%;
+         background-size: 22px;
+         }
+         .content{
+         margin: 30px 0;
+         }
+         .content .data{
+         padding: 25px;
+         background-color: #fff;
+         border: 2px solid #8bc34a;
+         border-radius: 8px;
+         }
+         çontent p{
+         margin-bottom: 15px;
+         padding-bottom: 15px;
+         border-bottom: 1px solid gainsboro;
+         }
+         .content p: last-child{
+         border-bottom: none;
+         margin-bottom: 0;
+         padding-bottom: 0;
+         }
+         .content p b{
+         font-weight: 700;
+         }
+         .content p span{
+         float: right;
+         font-weight: normal;
+         }
+         .data{
+         display: none;
+         }
+      </style>
+   </head>
+   <body>
+      <h1>The Electronic Engineer</h1>
+      <p></p>
+      <br>
+      <p><b>Direct ESP32 programming</b></p>
+      <p>This will install the firmware directly to your ESP32 without the need of Arduino or Compilers.</p>
+      <p> Just Select the project you want to install below and click install! 
+      <p>
+      <p><br></p>
+      <p><b> Only supported with Google Chrome or Microsoft Edge. It does not work with Firefox.</b></p>
+      <div class="wrapper">
+         <div class="menu">
+            <select id="name">
+               >
+               <option value="Option1">Bluetooth Analyzer Vx.xx</option>
+               <option value="Option2">Network Monitor Vx.xx</option>
+               <option value="Option3">Lego Analyzer Vx.xx</option>
+               <option value="Option4">WebSpector Vx.xx</option>
+               <option value="Option5">Bluetooth Speaker Vx.xx</option>
+               <option value="Option6">You've got Mail Vx.xx</option>
+               <option value="Option7">Talking Clock Vx.xx</option>
             </select>
-        </div>
-   
-    <div class="content">
-           <div id="Option1" class="data">
+         </div>
+         <div class="content">
+            <div id="Option1" class="data">
                <P>Optie 1</p>
-                  <script type="module" src="https://unpkg.com/esp-web-tools@3.4.2/dist/web/install-button.js?module"></script>
-    <esp-web-install-button manifest="test/manifest_Option1.json"></esp-web-install-button>
+               <script type="module" src="https://unpkg.com/esp-web-tools@3.4.2/dist/web/install-button.js?module"></script>
+               <esp-web-install-button manifest="test/manifest_Option1.json"></esp-web-install-button>
             </div>
-        <div id="Option2" class="data">
-            <P>Optie 2</p>
-             <script type="module" src="https://unpkg.com/esp-web-tools@3.4.2/dist/web/install-button.js?module"></script>
-    <esp-web-install-button manifest="test/manifest_Option2.json"></esp-web-install-button> 
-        </div>
-        <div id="Option3" class="data">
-            <P>Optie 3</p>
-                <script type="module" src="https://unpkg.com/esp-web-tools@3.4.2/dist/web/install-button.js?module"></script>
-    <esp-web-install-button manifest="test/manifest_Option3.json"></esp-web-install-button>
-        </div>
-        <div id="Option4" class="data">
-            <P>Optie 4</p>
-                <script type="module" src="https://unpkg.com/esp-web-tools@3.4.2/dist/web/install-button.js?module"></script>
-    <esp-web-install-button manifest="test/manifest_Option4.json"></esp-web-install-button>
-        </div>
-     </div>
-     </div>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script>
-        $(document).ready(function(){
-                          $("#name").on('change', function(){
-                            $(".data").hide();
-                            $("#"+ $(this).val()).fadeIn(700);
-            
-                                  }).change;
-           });        
-    </script> 
-</body>
+            <div id="Option2" class="data">
+               <P>Optie 2</p>
+               <script type="module" src="https://unpkg.com/esp-web-tools@3.4.2/dist/web/install-button.js?module"></script>
+               <esp-web-install-button manifest="test/manifest_Option2.json"></esp-web-install-button>
+            </div>
+            <div id="Option3" class="data">
+               <P>Optie 3</p>
+               <script type="module" src="https://unpkg.com/esp-web-tools@3.4.2/dist/web/install-button.js?module"></script>
+               <esp-web-install-button manifest="test/manifest_Option3.json"></esp-web-install-button>
+            </div>
+            <div id="Option4" class="data">
+               <P>Optie 4</p>
+               <script type="module" src="https://unpkg.com/esp-web-tools@3.4.2/dist/web/install-button.js?module"></script>
+               <esp-web-install-button manifest="test/manifest_Option4.json"></esp-web-install-button>
+            </div>
+         </div>
+      </div>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+      <script>
+         $(document).ready(function(){
+                           $("#name").on('change', function(){
+                             $(".data").hide();
+                             $("#"+ $(this).val()).fadeIn(700);
+             
+                                   }).change;
+            });        
+      </script> 
+   </body>
 </html>
